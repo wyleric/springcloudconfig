@@ -43,7 +43,7 @@ security:
     resource:
       loadBalanced: true
       token-info-uri: ${security.auth.server}/oauth/check-token
-      service-id: gym-gateway
+      service-id: pig-gateway
       jwt:
          key-uri: ${security.auth.server}/oauth/token_key #解析jwt令牌所需要密钥的地址
 
