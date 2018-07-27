@@ -33,14 +33,17 @@ security:
   encode:
     key: '1234567887654321' #必须16位
   validate:
-    code: true
-    preview: true
+    code: false
+    preview: false
   sessions: stateless
   oauth2:
     client:
       client-id: pig
       client-secret: pig
     resource:
+      loadBalanced: true
+      token-info-uri: ${security.auth.server}/oauth/check-token
+      service-id: gym-gateway
       jwt:
          key-uri: ${security.auth.server}/oauth/token_key #解析jwt令牌所需要密钥的地址
 
