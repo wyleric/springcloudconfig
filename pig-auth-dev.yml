@@ -22,11 +22,6 @@ spring:
     prefer-file-system-access: true
     suffix: .ftl
     template-loader-path: classpath:/templates/
-pig:
-  auth:
-    clientId: pig
-    clientSecret: pig
-    scope: server
 
 ignore:
   urls:
